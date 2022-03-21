@@ -33,6 +33,10 @@ title = input('type the title: ')
 # any desctiption for individual link page
 description = input('describe sotmething before redirection: ')
 
+# copy style dependency
+with open(os.path.join(config.DIR, 'style.css'), 'r') as rstyle:
+    with open(os.path.join(config.PUBLISH_DIR, 'style.css'), 'w') as wstyle:
+        wstyle.write(rstyle.read())
 
 # generate the page
 link = Make(link=link, title=title, desc=description, click=click, name=name)
