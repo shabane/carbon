@@ -55,6 +55,8 @@ def Make(link: str, title: str, desc: str, click: bool = False, name: str = None
             if name:
                 with open(os.path.join(config.PUBLISH_DIR, name+'.html'), 'w') as fliw:
                     fliw.write(fli)
+                    return fliw.name
             else:
                 with open(os.path.join(config.PUBLISH_DIR, Namer()), 'w') as fliw:
                     fliw.write(fli)
+                    return fliw.name
