@@ -1,0 +1,16 @@
+<header>
+    <div class="line">
+        click on the button to open the link
+    </div>
+</header>
+
+
+<p> {{ description}} </p>
+
+<button onclick="myFunction()">Open Link</button>
+
+<script>
+function myFunction() {
+  location.replace({{ link }})
+}
+</script>
