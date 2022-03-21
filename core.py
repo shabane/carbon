@@ -49,10 +49,13 @@ def Make(link: str, name: str, title: str, desc: str, click: bool = True) -> str
 
         if not os.path.exists(config.PUBLISH_DIR):
             os.mkdir(config.PUBLISH_DIR)
-        # TODO check the name of the file is empy str or not, if so save it as random, if not, save it as the given name
-        with open(os.path.join(config.PUBLISH_DIR, Namer()), 'w') as fliw:
-            fliw.write(fli)
+
+        if name:
+            with open(os.path.join(config.PUBLISH_DIR, Namer()), 'w') as fliw:
+                fliw.write(fli)
+        else:
+            with open(os.path.join(config.PUBLISH_DIR, name), 'w') as fliw:
+                fliw.write(fli)
 
 
-# Make('link', 'title', 'name', 'desc', False)
-print(Namer())
+Make('link', 'title', 'name', 'desc', False)
