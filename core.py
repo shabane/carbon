@@ -24,7 +24,7 @@ def Namer() -> str:
     return file_name+'.html'
 
 
-def Make(link: str, name: str, title: str, desc: str, click: bool = True) -> str:
+def Make(link: str, title: str, desc: str, click: bool = False, name: str = None) -> str:
     """make the link director
 
     Args:
@@ -53,11 +53,8 @@ def Make(link: str, name: str, title: str, desc: str, click: bool = True) -> str
                 os.mkdir(config.PUBLISH_DIR)
 
             if name:
-                with open(os.path.join(config.PUBLISH_DIR, Namer()), 'w') as fliw:
-                    fliw.write(fli)
-            else:
                 with open(os.path.join(config.PUBLISH_DIR, name), 'w') as fliw:
                     fliw.write(fli)
-
-
-
+            else:
+                with open(os.path.join(config.PUBLISH_DIR, Namer()), 'w') as fliw:
+                    fliw.write(fli)
