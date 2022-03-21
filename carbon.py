@@ -1,0 +1,5 @@
+link = input('link which you want to shorten: ')
+name = input('name of url(or just pass it blank to random): ')
+click = input('make user click to open the link(y/n)?: ')
+title = input('type the title: ')
+description = input('describe anything before redirection')

@@ -41,6 +41,8 @@ def Make(link: str, name: str, title: str, desc: str, click: bool = True) -> str
     else:
         path = os.path.join(config.DIR, config.REDIRECT_ON_OPEN)
 
+    # TODO append this fli to base.html
+
     with open(path, 'r') as fli:
         fli = fli.read()
         fli = re.sub('\{\{.*link.*\}\}', '"' + link + '"', fli)
