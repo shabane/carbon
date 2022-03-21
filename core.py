@@ -21,7 +21,7 @@ def Namer() -> str:
 
             file_name += random.choice(config.CHARS)
 
-    return file_name+'.hmlt'
+    return file_name+'.html'
 
 
 def Make(link: str, name: str, title: str, desc: str, click: bool = True) -> str:
