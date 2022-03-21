@@ -30,6 +30,7 @@ def Make(link: str, title: str, desc: str, click: bool = False, name: str = None
     Args:
         link (str): the link to be shortend.
         title (str): title in the site.
+        desc (str): description for each link page.
         click (bool, optional): redirect on open the link or click to open it. Defaults to True.
         name (str): uniq name for use as url
     Returns:
