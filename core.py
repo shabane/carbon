@@ -41,23 +41,23 @@ def Make(link: str, name: str, title: str, desc: str, click: bool = True) -> str
     else:
         path = os.path.join(config.DIR, config.REDIRECT_ON_OPEN)
 
-    # TODO append this fli to base.html
-
-    with open(path, 'r') as fli:
+    with open(os.path.join(config.DIR, config.BASE), 'r') as fli:
         fli = fli.read()
-        fli = re.sub('\{\{.*link.*\}\}', '"' + link + '"', fli)
-        fli = re.sub('\{\{.*title.*\}\}', title, fli)
-        fli = re.sub('\{\{.*description.*\}\}', desc, fli)
+        with open(path, 'r') as theme:
+            fli = re.sub('\{\{.*content.*\}\}', theme.read(), fli)
+            fli = re.sub('\{\{.*link.*\}\}', '"' + link + '"', fli)
+            fli = re.sub('\{\{.*title.*\}\}', title, fli)
+            fli = re.sub('\{\{.*description.*\}\}', desc, fli)
 
-        if not os.path.exists(config.PUBLISH_DIR):
-            os.mkdir(config.PUBLISH_DIR)
+            if not os.path.exists(config.PUBLISH_DIR):
+                os.mkdir(config.PUBLISH_DIR)
 
-        if name:
-            with open(os.path.join(config.PUBLISH_DIR, Namer()), 'w') as fliw:
-                fliw.write(fli)
-        else:
-            with open(os.path.join(config.PUBLISH_DIR, name), 'w') as fliw:
-                fliw.write(fli)
+            if name:
+                with open(os.path.join(config.PUBLISH_DIR, Namer()), 'w') as fliw:
+                    fliw.write(fli)
+            else:
+                with open(os.path.join(config.PUBLISH_DIR, name), 'w') as fliw:
+                    fliw.write(fli)
 
 
-Make('link', 'title', 'name', 'desc', False)
+
