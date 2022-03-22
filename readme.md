@@ -69,5 +69,11 @@ you can read full documentation in [this link](documentation/index.md)
 |   3  |[deploy on server](documentation/deploy_nginx.md)|
 |   4  |[how to make your own theme](documentation/theme.md)|
 |   5  |[development document](documentation/code_doc.md)|
+|999999| [Donate!](documentation/donate.md)|
 
 
+## Thanks
+
+thank you for choosing carbon. i hope this program work as well as it should.
+if you think this stuff worse it, if it's possible for you, i need donate to keep working on my
+stuff, if you can please concider [any donate](documentation/donate.md). **thank you**.
