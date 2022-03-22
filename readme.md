@@ -38,8 +38,7 @@ read the config [doc](documentation/config.md) to learn about it`s variable.
 
 each theme directory will save under the `theme` directory by default.
 default theme is `carbon_default` which is configured in the config.
-you can save theme in any directory, but just don`t forget to change the
-`DIR` variable in the `config.py` file.
+you can save theme in any directory, but just don't forget to change the `DIR` variable in the `config.py` file.
 
 to write your own theme read the [doc](documentation/theme.md).
 
