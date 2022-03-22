@@ -20,8 +20,7 @@ def Namer() -> str:
                 file_name = ''
 
             file_name += random.choice(config.CHARS)
-
-    return file_name+'.html'
+    return file_name+'.html' if file_name != 'index' else Namer()
 
 
 def Make(link: str, title: str, desc: str, click: bool = False, name: str = None) -> str:
