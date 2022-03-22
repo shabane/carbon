@@ -25,13 +25,13 @@ which each atom linked to each other and make a hexgon.
 ## Config
 
 all setting are in a single file called `config.py`.
-read the config [doc](lnk) to learn about it`s variable.
+read the config [doc](documentation/config.md) to learn about it`s variable.
 
 
 ## Deployment
 
-- [read how to config carbon on the server with *nginx*](lnk)
-- [how to config carbon with github pages for free](lnk)
+- [read how to config carbon on the server with *nginx*](documentation/deploy_nginx.md)
+- [how to config carbon with github pages for free](documentation/deploy_github_pages.md)
 
 
 ## Theme
@@ -41,18 +41,24 @@ default theme is `carbon_default` which is configured in the config.
 you can save theme in any directory, but just don`t forget to change the
 `DIR` variable in the `config.py` file.
 
-to write your own theme read the [doc](lnk).
+to write your own theme read the [doc](documentation/theme.md).
+
 
 ## Examples
 
-- firest example is [this](). whene you open this, you will redirect to the actual link.
+- firest example is [https://shabane.github.io/carbon/on_open](https://shabane.github.io/carbon/on_open). whene you open this, you will redirect to the actual link.
 
-- and the second one is [this]() which will ask you to click on a button to open up the actual link.
+- and the second one is [https://shabane.github.io/carbon/click_open](https://shabane.github.io/carbon/click_open) which will ask you to click on a button to open up the actual link.
+
+
+## Contribute
+
+to contribute on this project all you need is read the [code](documentation/code_doc.md) doc
 
 
 ## Documentation
 
-you can read full documentation in [this link]()
+you can read full documentation in [this link](documentation/index.md)
 
 **contents**
 
@@ -63,6 +69,6 @@ you can read full documentation in [this link]()
 |   2  |[deploy on github pages](documentation/deploy_github_pages.md)|
 |   3  |[deploy on server](documentation/deploy_nginx.md)|
 |   4  |[how to make your own theme](documentation/theme.md)|
-|   5  |[development document](documentation/theme.md)|
+|   5  |[development document](documentation/code_doc.md)|
 
 
