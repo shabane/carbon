@@ -1,6 +1,5 @@
 body {
     background-color: #ECF0F1;
-    
 }
 
 p {
@@ -61,4 +60,28 @@ button:hover {
     background-color: transparent;
     color: #34495E;
     cursor: default;
+}
+
+.bg {
+    background-image: url('https://s6.uupload.ir/files/bg_jrbk.gif');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #34495E;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: #ECF0F1;
+    border-color: #16A085;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: x-large;
 }
