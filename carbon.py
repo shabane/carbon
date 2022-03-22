@@ -13,7 +13,12 @@ while True:
         print('fetal: url should not be blank')
 
 # take a name for shorted url from user
-name = input('short name for url(or just pass it blank to random): ')
+while True:
+    name = input('short name for url(or just pass it blank to random): ')
+    if name == 'index':
+        print('fetal: name should not be index.')
+    else:
+        break
 
 # chose user should click to open the link or just redirect it
 while True:
