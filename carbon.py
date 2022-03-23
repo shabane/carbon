@@ -50,4 +50,4 @@ print(os.path.join(config.BASE_URL, os.path.split(link)[1]))
 # copy index
 with open(os.path.join(config.DIR, config.INDEX), 'r') as rindex:
     with open(os.path.join(config.PUBLISH_DIR, 'index.html'), 'w') as windex:
-        windex.write(rindex.read(1))
+        windex.write(rindex.read())
