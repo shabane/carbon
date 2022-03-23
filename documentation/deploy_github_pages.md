@@ -30,11 +30,14 @@ once you open the link, you should see the index page of carbon!
 **done!**
 
 5. now you can siply add your links and just push the chnages.
+
    clone the repo which you forked. `git clone <Your_repo>`
    ![1](https://s6.uupload.ir/files/6_q8bk.jpg)
+   
    ![2](https://s6.uupload.ir/files/8_5dz1.jpg)
 
-6. `cd goto` and run carbon `python3 carbon.py`
+6. `cd goto`
+   
    > in this case the name is *goto*.
    
    replace the `BASE_URL` in the `config.py` with your *github pages url*
