@@ -65,7 +65,7 @@ you can read full documentation in [this link](documentation/index.md)
 |:----:|:---:|
 |   0  |[index](documentation/index.md)|
 |   1  |[configs](documentation/config.md)|
-|   2  |[deploy on github pages](documentation/deploy_github_pages.md) ⛏️|
+|   2  |[deploy on github pages](documentation/deploy_github_pages.md) |
 |   3  |[deploy on server](documentation/deploy_nginx.md) ⛏️|
 |   4  |[how to make your own theme](documentation/theme.md)|
 |   5  |[development document](documentation/code_doc.md)|
