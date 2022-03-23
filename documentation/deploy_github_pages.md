@@ -35,7 +35,12 @@ once you open the link, you should see the index page of carbon!
    ![2](https://s6.uupload.ir/files/8_5dz1.jpg)
 
 6. `cd goto` and run carbon `python3 carbon.py`
-    > in this case the name is *goto*.
+   > in this case the name is *goto*.
+   
+   replace the `BASE_URL` in the `config.py` with your *github pages url*
+   ![carbon](https://s6.uupload.ir/files/10_zr6r.jpg)
+
+7. run carbon `python3 carbon.py`
    carbon will prompt a Cli and ask you for url, title and etc.
    pass all the stuff and then commit them `git add . && git commit -m 'new urls added'`.
    and in the last step, push them `git push`
