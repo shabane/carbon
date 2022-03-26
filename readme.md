@@ -2,7 +2,7 @@
 
 ![python](https://img.shields.io/badge/-Python-313131?logo=Python&logoColor=2ECC71&style=for-the-badge)
 ![python](https://img.shields.io/badge/-html5-313131?logo=html5&logoColor=2ECC71&style=for-the-badge)
-![python](https://img.shields.io/badge/-CSS3-313131?logo=CSS3&logoColor=2ECC71&style=for-the-badge) =
+![python](https://img.shields.io/badge/-CSS3-313131?logo=CSS3&logoColor=2ECC71&style=for-the-badge)
 
 
 ![carbon](https://s6.uupload.ir/files/carbon_r7tm.jpg)
